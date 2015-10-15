@@ -10,7 +10,23 @@ import Foundation
 import CoreData
 
 class User: NSManagedObject {
-
-// Insert code here to add functionality to your managed object subclass
-
+    
+    convenience init(dict: Dictionary<String, AnyObject>, insertIntoManagedObjectContext context: NSManagedObjectContext!) {
+        let entity = NSEntityDescription.entityForName("Question", inManagedObjectContext: context)!
+        self.init(entity: entity, insertIntoManagedObjectContext: context)
+        
+        userId = dict["userId"] as? String
+        
+        updateWithDictionary(dict)
+    }
+    
+    func updateWithDictionary(dict: Dictionary<String, AnyObject>) {
+        
+        if (userId != dict["userId"] as? String) {
+            print("User: updateWithDictionary() - Trying to update user with different Id")
+            return
+        }
+        
+        userName = dict["userName"] as? String
+    }
 }
