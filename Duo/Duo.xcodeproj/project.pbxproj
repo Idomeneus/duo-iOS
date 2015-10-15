@@ -16,6 +16,10 @@
 		C36E566A1BCF84BF00DF7990 /* DuoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56691BCF84BF00DF7990 /* DuoUITests.swift */; };
 		C36E56781BD0048C00DF7990 /* MainFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56771BD0048C00DF7990 /* MainFeedTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C36E567B1BD00B5200DF7990 /* MockedQuestions.json in Resources */ = {isa = PBXBuildFile; fileRef = C36E567A1BD00B5200DF7990 /* MockedQuestions.json */; settings = {ASSET_TAGS = (); }; };
+		C36E56811BD0156500DF7990 /* Question+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E567D1BD0156500DF7990 /* Question+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		C36E56821BD0156500DF7990 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E567E1BD0156500DF7990 /* Question.swift */; settings = {ASSET_TAGS = (); }; };
+		C36E56831BD0156500DF7990 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E567F1BD0156500DF7990 /* User+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		C36E56841BD0156500DF7990 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56801BD0156500DF7990 /* User.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		C36E566B1BCF84BF00DF7990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C36E56771BD0048C00DF7990 /* MainFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeedTableViewController.swift; sourceTree = "<group>"; };
 		C36E567A1BD00B5200DF7990 /* MockedQuestions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockedQuestions.json; sourceTree = "<group>"; };
+		C36E567D1BD0156500DF7990 /* Question+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Question+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C36E567E1BD0156500DF7990 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		C36E567F1BD0156500DF7990 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C36E56801BD0156500DF7990 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +151,10 @@
 		C36E567C1BD014D400DF7990 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C36E567D1BD0156500DF7990 /* Question+CoreDataProperties.swift */,
+				C36E567E1BD0156500DF7990 /* Question.swift */,
+				C36E567F1BD0156500DF7990 /* User+CoreDataProperties.swift */,
+				C36E56801BD0156500DF7990 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -278,9 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36E56821BD0156500DF7990 /* Question.swift in Sources */,
 				C36E564F1BCF84BF00DF7990 /* Duo.xcdatamodeld in Sources */,
+				C36E56831BD0156500DF7990 /* User+CoreDataProperties.swift in Sources */,
+				C36E56811BD0156500DF7990 /* Question+CoreDataProperties.swift in Sources */,
 				C36E56781BD0048C00DF7990 /* MainFeedTableViewController.swift in Sources */,
 				C36E56471BCF84BF00DF7990 /* AppDelegate.swift in Sources */,
+				C36E56841BD0156500DF7990 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
