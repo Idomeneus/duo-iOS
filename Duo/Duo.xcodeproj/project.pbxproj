@@ -15,6 +15,7 @@
 		C36E565F1BCF84BF00DF7990 /* DuoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E565E1BCF84BF00DF7990 /* DuoTests.swift */; };
 		C36E566A1BCF84BF00DF7990 /* DuoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56691BCF84BF00DF7990 /* DuoUITests.swift */; };
 		C36E56781BD0048C00DF7990 /* MainFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56771BD0048C00DF7990 /* MainFeedTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C36E567B1BD00B5200DF7990 /* MockedQuestions.json in Resources */ = {isa = PBXBuildFile; fileRef = C36E567A1BD00B5200DF7990 /* MockedQuestions.json */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C36E56691BCF84BF00DF7990 /* DuoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoUITests.swift; sourceTree = "<group>"; };
 		C36E566B1BCF84BF00DF7990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C36E56771BD0048C00DF7990 /* MainFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeedTableViewController.swift; sourceTree = "<group>"; };
+		C36E567A1BD00B5200DF7990 /* MockedQuestions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockedQuestions.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		C36E565D1BCF84BF00DF7990 /* DuoTests */ = {
 			isa = PBXGroup;
 			children = (
+				C36E56791BD00B4400DF7990 /* Mocked Data */,
 				C36E565E1BCF84BF00DF7990 /* DuoTests.swift */,
 				C36E56601BCF84BF00DF7990 /* Info.plist */,
 			);
@@ -126,6 +129,14 @@
 				C36E566B1BCF84BF00DF7990 /* Info.plist */,
 			);
 			path = DuoUITests;
+			sourceTree = "<group>";
+		};
+		C36E56791BD00B4400DF7990 /* Mocked Data */ = {
+			isa = PBXGroup;
+			children = (
+				C36E567A1BD00B5200DF7990 /* MockedQuestions.json */,
+			);
+			name = "Mocked Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36E567B1BD00B5200DF7990 /* MockedQuestions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

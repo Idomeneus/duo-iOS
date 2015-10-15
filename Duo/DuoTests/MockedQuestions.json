@@ -1,0 +1,65 @@
+{
+	"list": [
+		{
+			"questionId": "qst:58432098",
+			"textBody": "Who is better?",
+			"answer": {
+				"imgURLs": [
+					"https://upload.wikimedia.org/wikipedia/en/0/0a/Justin_brandon_guitar.jpg",
+					"https://upload.wikimedia.org/wikipedia/en/d/d2/Justindcooper.jpg"
+				],
+				"votes": [
+					77532, 
+					58421
+				]
+			},
+			"createdAt": 1444925251,
+			"createdBy": {
+				"userId": "usr:2418905",
+				"userName": "user1"
+			},
+			"myVote": null
+		},
+		{
+			"questionId": "qst:192375",
+			"textBody": "What to eat for breakfast?",
+			"answer": {
+				"imgURLs": [
+					"http://t0.gstatic.com/images?q=tbn:ANd9GcQxLbgQI_moIEqTPMvD1J4QdeM0J73ILywafF8DnMvQK9V05opN",
+					"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7DS6MWsARaso9bYemSASGt3mMbnUldIWK6N8Xao3xJ97oVjZM"
+				],
+				"votes": [
+					12, 
+					19
+				]
+			},
+			"createdAt": 1444925351,
+			"createdBy": {
+				"userId": "usr:2418205",
+				"userName": "user2"
+			},
+			"myVote": 1
+		},
+		{
+			"questionId": "qst:9573",
+			"textBody": "You mad bro?",
+			"answer": {
+				"imgURLs": [
+					"https://usatftw.files.wordpress.com/2015/01/ap_super_bowl_football_70246842.jpg?w=1000&h=730",
+					"https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAS-AAAAJDM5MDg4NGNmLTFkYmQtNDI3ZC1hMzNlLWIzMDIwODdhMmJhNg.jpg"
+				],
+				"votes": [
+					21923, 
+					2984
+				]
+			},
+			"createdAt": 1444915351,
+			"createdBy": {
+				"userId": "usr:2418205",
+				"userName": "user2"
+			},
+			"myVote": 0
+		}
+	],
+	"nextURL": "https://api.duo.com/new"
+}
