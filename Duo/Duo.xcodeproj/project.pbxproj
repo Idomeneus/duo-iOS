@@ -14,6 +14,7 @@
 		C36E56541BCF84BF00DF7990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36E56521BCF84BF00DF7990 /* LaunchScreen.storyboard */; };
 		C36E565F1BCF84BF00DF7990 /* DuoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E565E1BCF84BF00DF7990 /* DuoTests.swift */; };
 		C36E566A1BCF84BF00DF7990 /* DuoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56691BCF84BF00DF7990 /* DuoUITests.swift */; };
+		C36E56781BD0048C00DF7990 /* MainFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56771BD0048C00DF7990 /* MainFeedTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C36E56651BCF84BF00DF7990 /* DuoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36E56691BCF84BF00DF7990 /* DuoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoUITests.swift; sourceTree = "<group>"; };
 		C36E566B1BCF84BF00DF7990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36E56771BD0048C00DF7990 /* MainFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeedTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				C36E56521BCF84BF00DF7990 /* LaunchScreen.storyboard */,
 				C36E56551BCF84BF00DF7990 /* Info.plist */,
 				C36E564D1BCF84BF00DF7990 /* Duo.xcdatamodeld */,
+				C36E56771BD0048C00DF7990 /* MainFeedTableViewController.swift */,
 			);
 			path = Duo;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C36E564F1BCF84BF00DF7990 /* Duo.xcdatamodeld in Sources */,
+				C36E56781BD0048C00DF7990 /* MainFeedTableViewController.swift in Sources */,
 				C36E56471BCF84BF00DF7990 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
