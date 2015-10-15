@@ -20,6 +20,44 @@ class Question: NSManagedObject {
         updateWithDictionary(dict)
     }
     
+    class func existingOrNewQuestionWithDictionary(dict: Dictionary<String, AnyObject>, inManageObjectContext context:NSManagedObjectContext!) -> Question? {
+
+        let id: String? = dict["questionId"] as? String
+        
+        if (id == nil) {
+            print("Question: existingOrNewQuestionWithDictionary() - No questionId in dictionary")
+            return nil
+        }
+        
+        var question: Question? = getQuestionWithId(id!, inManageObjectContext: context)
+        
+        if (question == nil) {
+            question = Question(dict: dict, insertIntoManagedObjectContext: context)
+        }
+        
+        return question
+    }
+    
+    class func getQuestionWithId(questionId: String, inManageObjectContext context:NSManagedObjectContext!) -> Question? {
+        let request: NSFetchRequest = NSFetchRequest(entityName: "Question")
+        
+        let predicate: NSPredicate = NSPredicate(format: "questionId == %@", questionId)
+        request.predicate = predicate
+        
+        do {
+            let results: Array = try context.executeFetchRequest(request)
+            
+            if (!results.isEmpty) {
+                return results[0] as? Question
+            }
+            
+        } catch {
+            print(error)
+        }
+        
+        return nil
+    }
+    
     func updateWithDictionary(dict: Dictionary<String, AnyObject>) {
         
         if (questionId != dict["questionId"] as? String) {
