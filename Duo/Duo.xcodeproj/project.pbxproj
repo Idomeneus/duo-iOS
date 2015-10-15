@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C36E56471BCF84BF00DF7990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56461BCF84BF00DF7990 /* AppDelegate.swift */; };
-		C36E56491BCF84BF00DF7990 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56481BCF84BF00DF7990 /* ViewController.swift */; };
 		C36E564C1BCF84BF00DF7990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36E564A1BCF84BF00DF7990 /* Main.storyboard */; };
 		C36E564F1BCF84BF00DF7990 /* Duo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C36E564D1BCF84BF00DF7990 /* Duo.xcdatamodeld */; };
 		C36E56511BCF84BF00DF7990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36E56501BCF84BF00DF7990 /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		C36E56431BCF84BF00DF7990 /* Duo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36E56461BCF84BF00DF7990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C36E56481BCF84BF00DF7990 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C36E564B1BCF84BF00DF7990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C36E564E1BCF84BF00DF7990 /* Duo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Duo.xcdatamodel; sourceTree = "<group>"; };
 		C36E56501BCF84BF00DF7990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				C36E56461BCF84BF00DF7990 /* AppDelegate.swift */,
-				C36E56481BCF84BF00DF7990 /* ViewController.swift */,
 				C36E564A1BCF84BF00DF7990 /* Main.storyboard */,
 				C36E56501BCF84BF00DF7990 /* Assets.xcassets */,
 				C36E56521BCF84BF00DF7990 /* LaunchScreen.storyboard */,
@@ -259,7 +256,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C36E564F1BCF84BF00DF7990 /* Duo.xcdatamodeld in Sources */,
-				C36E56491BCF84BF00DF7990 /* ViewController.swift in Sources */,
 				C36E56471BCF84BF00DF7990 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
