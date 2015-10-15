@@ -12,12 +12,50 @@ import CoreData
 class User: NSManagedObject {
     
     convenience init(dict: Dictionary<String, AnyObject>, insertIntoManagedObjectContext context: NSManagedObjectContext!) {
-        let entity = NSEntityDescription.entityForName("Question", inManagedObjectContext: context)!
+        let entity = NSEntityDescription.entityForName("User", inManagedObjectContext: context)!
         self.init(entity: entity, insertIntoManagedObjectContext: context)
         
         userId = dict["userId"] as? String
         
         updateWithDictionary(dict)
+    }
+    
+    class func existingOrNewUserWithDictionary(dict: Dictionary<String, AnyObject>, inManageObjectContext context:NSManagedObjectContext!) -> User? {
+        
+        let id: String? = dict["userId"] as? String
+        
+        if (id == nil) {
+            print("User: existingOrNewUserWithDictionary() - No userId in dictionary")
+            return nil
+        }
+        
+        var user: User? = getUserWithId(id!, inManageObjectContext: context)
+        
+        if (user == nil) {
+            user = User(dict: dict, insertIntoManagedObjectContext: context)
+        }
+        
+        return user
+    }
+    
+    class func getUserWithId(userId: String, inManageObjectContext context:NSManagedObjectContext!) -> User? {
+        let request: NSFetchRequest = NSFetchRequest(entityName: "User")
+        
+        let predicate: NSPredicate = NSPredicate(format: "userId == %@", userId)
+        request.predicate = predicate
+        
+        do {
+            let results: Array = try context.executeFetchRequest(request)
+            
+            if (!results.isEmpty) {
+                return results[0] as? User
+            }
+            
+        } catch {
+            print(error)
+        }
+        
+        return nil
     }
     
     func updateWithDictionary(dict: Dictionary<String, AnyObject>) {
