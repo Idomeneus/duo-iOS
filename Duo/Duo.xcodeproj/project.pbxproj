@@ -12,7 +12,6 @@
 		C36E564F1BCF84BF00DF7990 /* Duo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C36E564D1BCF84BF00DF7990 /* Duo.xcdatamodeld */; };
 		C36E56511BCF84BF00DF7990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36E56501BCF84BF00DF7990 /* Assets.xcassets */; };
 		C36E56541BCF84BF00DF7990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36E56521BCF84BF00DF7990 /* LaunchScreen.storyboard */; };
-		C36E565F1BCF84BF00DF7990 /* DuoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E565E1BCF84BF00DF7990 /* DuoTests.swift */; };
 		C36E566A1BCF84BF00DF7990 /* DuoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56691BCF84BF00DF7990 /* DuoUITests.swift */; };
 		C36E56781BD0048C00DF7990 /* MainFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56771BD0048C00DF7990 /* MainFeedTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C36E567B1BD00B5200DF7990 /* MockedQuestions.json in Resources */ = {isa = PBXBuildFile; fileRef = C36E567A1BD00B5200DF7990 /* MockedQuestions.json */; settings = {ASSET_TAGS = (); }; };
@@ -48,7 +47,6 @@
 		C36E56531BCF84BF00DF7990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C36E56551BCF84BF00DF7990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C36E565A1BCF84BF00DF7990 /* DuoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C36E565E1BCF84BF00DF7990 /* DuoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoTests.swift; sourceTree = "<group>"; };
 		C36E56601BCF84BF00DF7990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C36E56651BCF84BF00DF7990 /* DuoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36E56691BCF84BF00DF7990 /* DuoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoUITests.swift; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				C36E56791BD00B4400DF7990 /* Mocked Data */,
-				C36E565E1BCF84BF00DF7990 /* DuoTests.swift */,
 				C36E56601BCF84BF00DF7990 /* Info.plist */,
 			);
 			path = DuoTests;
@@ -304,7 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C36E565F1BCF84BF00DF7990 /* DuoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
