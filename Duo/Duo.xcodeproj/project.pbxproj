@@ -109,14 +109,14 @@
 		C36E56451BCF84BF00DF7990 /* Duo */ = {
 			isa = PBXGroup;
 			children = (
-				C36E567C1BD014D400DF7990 /* Model */,
+				C36E56871BD0BAEB00DF7990 /* Controllers */,
+				C36E567C1BD014D400DF7990 /* Models */,
 				C36E56461BCF84BF00DF7990 /* AppDelegate.swift */,
 				C36E564A1BCF84BF00DF7990 /* Main.storyboard */,
 				C36E56501BCF84BF00DF7990 /* Assets.xcassets */,
 				C36E56521BCF84BF00DF7990 /* LaunchScreen.storyboard */,
 				C36E56551BCF84BF00DF7990 /* Info.plist */,
 				C36E564D1BCF84BF00DF7990 /* Duo.xcdatamodeld */,
-				C36E56771BD0048C00DF7990 /* MainFeedTableViewController.swift */,
 			);
 			path = Duo;
 			sourceTree = "<group>";
@@ -148,7 +148,7 @@
 			name = "Mocked Data";
 			sourceTree = "<group>";
 		};
-		C36E567C1BD014D400DF7990 /* Model */ = {
+		C36E567C1BD014D400DF7990 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				C36E567D1BD0156500DF7990 /* Question+CoreDataProperties.swift */,
@@ -156,7 +156,15 @@
 				C36E567F1BD0156500DF7990 /* User+CoreDataProperties.swift */,
 				C36E56801BD0156500DF7990 /* User.swift */,
 			);
-			name = Model;
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C36E56871BD0BAEB00DF7990 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C36E56771BD0048C00DF7990 /* MainFeedTableViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
