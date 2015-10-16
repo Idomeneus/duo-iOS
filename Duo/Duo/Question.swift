@@ -33,6 +33,8 @@ class Question: NSManagedObject {
         
         if (question == nil) {
             question = Question(dict: dict, insertIntoManagedObjectContext: context)
+        } else {
+            question!.updateWithDictionary(dict)
         }
         
         return question
@@ -74,14 +76,14 @@ class Question: NSManagedObject {
         
         myVote = dict["myVote"] as? Int
         
-        imgURLs = dict["imgURLs"] as? NSArray
+        imgURLs = dict["answer"]?["imgURLs"] as? [String]
         
-        votes = dict["votes"] as? NSArray
+        votes = dict["answer"]?["votes"] as? [Int]
         
         let userDict: Dictionary<String, AnyObject>? = dict["createdBy"] as? Dictionary<String, AnyObject>
         
         if (userDict != nil) {
-            createdBy = User(dict: userDict!, insertIntoManagedObjectContext: managedObjectContext)
+            createdBy = User.existingOrNewUserWithDictionary(userDict!, inManageObjectContext: managedObjectContext)
         }
     }
 }

@@ -33,6 +33,8 @@ class User: NSManagedObject {
         
         if (user == nil) {
             user = User(dict: dict, insertIntoManagedObjectContext: context)
+        } else {
+            user!.updateWithDictionary(dict)
         }
         
         return user
