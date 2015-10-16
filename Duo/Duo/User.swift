@@ -29,13 +29,22 @@ class User: NSManagedObject {
         if (id == nil) {
             user = User(dict: dict, insertIntoManagedObjectContext: context)
         } else {
-            user = getUserWithId(id!, inManageObjectContext: context)
+            user = existingOrNewUserWithId(id!, inManageObjectContext: context)
             
-            if (user == nil) {
-                user = User(dict: dict, insertIntoManagedObjectContext: context)
-            } else {
-                user!.updateWithDictionary(dict)
-            }
+            user!.updateWithDictionary(dict)
+        }
+        
+        return user!
+    }
+    
+    class func existingOrNewUserWithId(userId: String, inManageObjectContext context:NSManagedObjectContext!) -> User {
+        
+        var user: User? = getUserWithId(userId, inManageObjectContext: context)
+        
+        if (user == nil) {
+            let entity = NSEntityDescription.entityForName("User", inManagedObjectContext: context)!
+            user = User(entity: entity, insertIntoManagedObjectContext: context)
+            user?.userId = userId
         }
         
         return user!
