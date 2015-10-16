@@ -20,27 +20,42 @@ class Question: NSManagedObject {
         updateWithDictionary(dict)
     }
     
-    class func existingOrNewQuestionWithDictionary(dict: Dictionary<String, AnyObject>, inManageObjectContext context:NSManagedObjectContext!) -> Question? {
+    class func existingOrNewQuestionWithDictionary(dict: Dictionary<String, AnyObject>, inManageObjectContext context:NSManagedObjectContext!) -> Question {
 
         let id: String? = dict["questionId"] as? String
         
+        var question: Question?
+        
         if (id == nil) {
-            print("Question: existingOrNewQuestionWithDictionary() - No questionId in dictionary")
-            return nil
-        }
-        
-        var question: Question? = getQuestionWithId(id!, inManageObjectContext: context)
-        
-        if (question == nil) {
             question = Question(dict: dict, insertIntoManagedObjectContext: context)
         } else {
+            question = existingOrNewQuestionWithId(id!, inManageObjectContext: context)
+            
             question!.updateWithDictionary(dict)
         }
         
-        return question
+        return question!
+    }
+    
+    class func existingOrNewQuestionWithId(questionId: String, inManageObjectContext context:NSManagedObjectContext!) -> Question {
+        
+        var question: Question? = getQuestionWithId(questionId, inManageObjectContext: context)
+        
+        if (question == nil) {
+            let entity = NSEntityDescription.entityForName("Question", inManagedObjectContext: context)!
+            question = Question(entity: entity, insertIntoManagedObjectContext: context)
+            question?.questionId = questionId
+        }
+        
+        return question!
     }
     
     class func getQuestionWithId(questionId: String, inManageObjectContext context:NSManagedObjectContext!) -> Question? {
+        
+        if (questionId.characters.count <= 0) {
+            return nil
+        }
+        
         let request: NSFetchRequest = NSFetchRequest(entityName: "Question")
         
         let predicate: NSPredicate = NSPredicate(format: "questionId == %@", questionId)

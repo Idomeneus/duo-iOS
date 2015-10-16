@@ -20,27 +20,33 @@ class User: NSManagedObject {
         updateWithDictionary(dict)
     }
     
-    class func existingOrNewUserWithDictionary(dict: Dictionary<String, AnyObject>, inManageObjectContext context:NSManagedObjectContext!) -> User? {
+    class func existingOrNewUserWithDictionary(dict: Dictionary<String, AnyObject>, inManageObjectContext context:NSManagedObjectContext!) -> User {
         
         let id: String? = dict["userId"] as? String
         
+        var user: User?
+        
         if (id == nil) {
-            print("User: existingOrNewUserWithDictionary() - No userId in dictionary")
-            return nil
-        }
-        
-        var user: User? = getUserWithId(id!, inManageObjectContext: context)
-        
-        if (user == nil) {
             user = User(dict: dict, insertIntoManagedObjectContext: context)
         } else {
-            user!.updateWithDictionary(dict)
+            user = getUserWithId(id!, inManageObjectContext: context)
+            
+            if (user == nil) {
+                user = User(dict: dict, insertIntoManagedObjectContext: context)
+            } else {
+                user!.updateWithDictionary(dict)
+            }
         }
         
-        return user
+        return user!
     }
     
     class func getUserWithId(userId: String, inManageObjectContext context:NSManagedObjectContext!) -> User? {
+        
+        if (userId.characters.count <= 0) {
+            return nil
+        }
+        
         let request: NSFetchRequest = NSFetchRequest(entityName: "User")
         
         let predicate: NSPredicate = NSPredicate(format: "userId == %@", userId)
