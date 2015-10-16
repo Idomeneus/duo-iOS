@@ -19,6 +19,7 @@
 		C36E56821BD0156500DF7990 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E567E1BD0156500DF7990 /* Question.swift */; settings = {ASSET_TAGS = (); }; };
 		C36E56831BD0156500DF7990 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E567F1BD0156500DF7990 /* User+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		C36E56841BD0156500DF7990 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56801BD0156500DF7990 /* User.swift */; settings = {ASSET_TAGS = (); }; };
+		C36E56861BD0681A00DF7990 /* QuestionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56851BD0681A00DF7990 /* QuestionTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		C36E567E1BD0156500DF7990 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		C36E567F1BD0156500DF7990 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C36E56801BD0156500DF7990 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C36E56851BD0681A00DF7990 /* QuestionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			children = (
 				C36E56791BD00B4400DF7990 /* Mocked Data */,
 				C36E56601BCF84BF00DF7990 /* Info.plist */,
+				C36E56851BD0681A00DF7990 /* QuestionTests.swift */,
 			);
 			path = DuoTests;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 		C36E563B1BCF84BF00DF7990 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Boris Emorine";
 				TargetAttributes = {
@@ -301,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36E56861BD0681A00DF7990 /* QuestionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,10 +459,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DuoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BEM.DuoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Duo.app/Duo";
 			};
 			name = Debug;
@@ -466,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DuoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BEM.DuoTests;
