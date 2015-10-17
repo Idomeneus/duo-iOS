@@ -115,6 +115,7 @@
 		C36E56451BCF84BF00DF7990 /* Duo */ = {
 			isa = PBXGroup;
 			children = (
+				C3A983E11BD317A500717DED /* Services */,
 				C36E56871BD0BAEB00DF7990 /* Controllers */,
 				C36E567C1BD014D400DF7990 /* Models */,
 				C36E56461BCF84BF00DF7990 /* AppDelegate.swift */,
@@ -174,6 +175,13 @@
 				C36E56771BD0048C00DF7990 /* MainFeedTableViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C3A983E11BD317A500717DED /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
