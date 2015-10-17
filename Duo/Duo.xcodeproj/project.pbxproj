@@ -22,6 +22,7 @@
 		C36E56861BD0681A00DF7990 /* QuestionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56851BD0681A00DF7990 /* QuestionTests.swift */; settings = {ASSET_TAGS = (); }; };
 		C36E56901BD0C65500DF7990 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E568E1BD0C65500DF7990 /* List.swift */; settings = {ASSET_TAGS = (); }; };
 		C36E56911BD0C65500DF7990 /* List+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E568F1BD0C65500DF7990 /* List+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		C3A983E01BD314D900717DED /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3A983DF1BD314D900717DED /* Keys.plist */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		C36E56851BD0681A00DF7990 /* QuestionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTests.swift; sourceTree = "<group>"; };
 		C36E568E1BD0C65500DF7990 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		C36E568F1BD0C65500DF7990 /* List+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "List+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C3A983DF1BD314D900717DED /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				C36E56521BCF84BF00DF7990 /* LaunchScreen.storyboard */,
 				C36E56551BCF84BF00DF7990 /* Info.plist */,
 				C36E564D1BCF84BF00DF7990 /* Duo.xcdatamodeld */,
+				C3A983DF1BD314D900717DED /* Keys.plist */,
 			);
 			path = Duo;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A983E01BD314D900717DED /* Keys.plist in Resources */,
 				C36E56541BCF84BF00DF7990 /* LaunchScreen.storyboard in Resources */,
 				C36E56511BCF84BF00DF7990 /* Assets.xcassets in Resources */,
 				C36E564C1BCF84BF00DF7990 /* Main.storyboard in Resources */,
