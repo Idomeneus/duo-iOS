@@ -23,6 +23,7 @@
 		C36E56901BD0C65500DF7990 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E568E1BD0C65500DF7990 /* List.swift */; settings = {ASSET_TAGS = (); }; };
 		C36E56911BD0C65500DF7990 /* List+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E568F1BD0C65500DF7990 /* List+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		C3A983E01BD314D900717DED /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3A983DF1BD314D900717DED /* Keys.plist */; settings = {ASSET_TAGS = (); }; };
+		C3A983E31BD31EBC00717DED /* QuestionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A983E21BD31EBC00717DED /* QuestionsService.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		C36E568E1BD0C65500DF7990 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		C36E568F1BD0C65500DF7990 /* List+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "List+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C3A983DF1BD314D900717DED /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		C3A983E21BD31EBC00717DED /* QuestionsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		C36E56451BCF84BF00DF7990 /* Duo */ = {
 			isa = PBXGroup;
 			children = (
+				C3A983E41BD320D300717DED /* Helpers */,
 				C3A983E11BD317A500717DED /* Services */,
 				C36E56871BD0BAEB00DF7990 /* Controllers */,
 				C36E567C1BD014D400DF7990 /* Models */,
@@ -180,8 +183,16 @@
 		C3A983E11BD317A500717DED /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C3A983E21BD31EBC00717DED /* QuestionsService.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		C3A983E41BD320D300717DED /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C36E56821BD0156500DF7990 /* Question.swift in Sources */,
+				C3A983E31BD31EBC00717DED /* QuestionsService.swift in Sources */,
 				C36E56901BD0C65500DF7990 /* List.swift in Sources */,
 				C36E564F1BCF84BF00DF7990 /* Duo.xcdatamodeld in Sources */,
 				C36E56831BD0156500DF7990 /* User+CoreDataProperties.swift in Sources */,
