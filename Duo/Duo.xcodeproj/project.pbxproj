@@ -25,6 +25,7 @@
 		C3A983E01BD314D900717DED /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3A983DF1BD314D900717DED /* Keys.plist */; settings = {ASSET_TAGS = (); }; };
 		C3A983E31BD31EBC00717DED /* QuestionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A983E21BD31EBC00717DED /* QuestionsService.swift */; settings = {ASSET_TAGS = (); }; };
 		C3A983E61BD320EB00717DED /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A983E51BD320EB00717DED /* Enums.swift */; settings = {ASSET_TAGS = (); }; };
+		C3A983E81BD3285000717DED /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A983E71BD3285000717DED /* Router.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		C3A983DF1BD314D900717DED /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		C3A983E21BD31EBC00717DED /* QuestionsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsService.swift; sourceTree = "<group>"; };
 		C3A983E51BD320EB00717DED /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		C3A983E71BD3285000717DED /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				C3A983E51BD320EB00717DED /* Enums.swift */,
+				C3A983E71BD3285000717DED /* Router.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				C36E56471BCF84BF00DF7990 /* AppDelegate.swift in Sources */,
 				C36E56841BD0156500DF7990 /* User.swift in Sources */,
 				C3A983E61BD320EB00717DED /* Enums.swift in Sources */,
+				C3A983E81BD3285000717DED /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
