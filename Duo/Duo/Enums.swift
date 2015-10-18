@@ -6,13 +6,11 @@
 //  Copyright © 2015 Boris Emorine. All rights reserved.
 //
 
-class Enums {
-    
+struct Enums {
     enum questionsCategory {
         case Top
         case Hot
         case New
         case Main
     }
-
 }
