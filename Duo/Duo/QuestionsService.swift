@@ -19,7 +19,7 @@ struct QuestionsService {
                 return
             }
             
-            let questions: List = List(dict: questionsDict!, insertIntoManagedObjectContext: context)
+            let questions: List = List.existingOrNewListWithDictionary(questionsDict!, inManageObjectContext: context)
             
             completion?(questions: questions, error: nil)
             return
