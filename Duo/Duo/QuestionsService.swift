@@ -22,7 +22,6 @@ struct QuestionsService {
             let questions: List = List.existingOrNewListWithDictionary(questionsDict!, inManageObjectContext: context)
             
             completion?(questions: questions, error: nil)
-            return
         }
     }
     
