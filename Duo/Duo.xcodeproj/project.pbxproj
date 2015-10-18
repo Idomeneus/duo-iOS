@@ -24,6 +24,7 @@
 		C36E56911BD0C65500DF7990 /* List+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E568F1BD0C65500DF7990 /* List+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		C3A983E01BD314D900717DED /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3A983DF1BD314D900717DED /* Keys.plist */; settings = {ASSET_TAGS = (); }; };
 		C3A983E31BD31EBC00717DED /* QuestionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A983E21BD31EBC00717DED /* QuestionsService.swift */; settings = {ASSET_TAGS = (); }; };
+		C3A983E61BD320EB00717DED /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A983E51BD320EB00717DED /* Enums.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		C36E568F1BD0C65500DF7990 /* List+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "List+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C3A983DF1BD314D900717DED /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		C3A983E21BD31EBC00717DED /* QuestionsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsService.swift; sourceTree = "<group>"; };
+		C3A983E51BD320EB00717DED /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 		C3A983E41BD320D300717DED /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C3A983E51BD320EB00717DED /* Enums.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				C36E56781BD0048C00DF7990 /* MainFeedTableViewController.swift in Sources */,
 				C36E56471BCF84BF00DF7990 /* AppDelegate.swift in Sources */,
 				C36E56841BD0156500DF7990 /* User.swift in Sources */,
+				C3A983E61BD320EB00717DED /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
