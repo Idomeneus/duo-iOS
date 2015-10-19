@@ -26,6 +26,7 @@
 		C3A983E31BD31EBC00717DED /* QuestionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A983E21BD31EBC00717DED /* QuestionsService.swift */; settings = {ASSET_TAGS = (); }; };
 		C3A983E61BD320EB00717DED /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A983E51BD320EB00717DED /* Enums.swift */; settings = {ASSET_TAGS = (); }; };
 		C3A983E81BD3285000717DED /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A983E71BD3285000717DED /* Router.swift */; settings = {ASSET_TAGS = (); }; };
+		C3A983EC1BD4923400717DED /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A983EB1BD4923400717DED /* ErrorHandler.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		C3A983E21BD31EBC00717DED /* QuestionsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsService.swift; sourceTree = "<group>"; };
 		C3A983E51BD320EB00717DED /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		C3A983E71BD3285000717DED /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		C3A983EB1BD4923400717DED /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			children = (
 				C3A983E51BD320EB00717DED /* Enums.swift */,
 				C3A983E71BD3285000717DED /* Router.swift */,
+				C3A983EB1BD4923400717DED /* ErrorHandler.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				C36E56911BD0C65500DF7990 /* List+CoreDataProperties.swift in Sources */,
 				C36E56811BD0156500DF7990 /* Question+CoreDataProperties.swift in Sources */,
 				C36E56781BD0048C00DF7990 /* MainFeedTableViewController.swift in Sources */,
+				C3A983EC1BD4923400717DED /* ErrorHandler.swift in Sources */,
 				C36E56471BCF84BF00DF7990 /* AppDelegate.swift in Sources */,
 				C36E56841BD0156500DF7990 /* User.swift in Sources */,
 				C3A983E61BD320EB00717DED /* Enums.swift in Sources */,
