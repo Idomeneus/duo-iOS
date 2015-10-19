@@ -33,34 +33,36 @@ struct QuestionsService {
         
         let task = session.dataTaskWithURL(URL) { (data, response, error) -> Void in
             
-            if (error != nil) {
-                completion?(questionsDict: nil, error: error)
-                return
-            }
-            
-            let response: NSHTTPURLResponse? = response as? NSHTTPURLResponse
-            
-            if (response != nil && data != nil) {
-                if (response!.statusCode == 200) {
-                    if let dict = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as? [String: AnyObject] {
-                        completion?(questionsDict: dict, error: nil)
-                        return
+            dispatch_async(dispatch_get_main_queue()) {
+                if (error != nil) {
+                    completion?(questionsDict: nil, error: error)
+                    return
+                }
+                
+                let response: NSHTTPURLResponse? = response as? NSHTTPURLResponse
+                
+                if (response != nil && data != nil) {
+                    if (response!.statusCode == 200) {
+                        if let dict = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as? [String: AnyObject] {
+                            completion?(questionsDict: dict, error: nil)
+                            return
+                        } else {
+                            completion?(questionsDict: nil, error: NSError(domain: "duo.main", code: 0, userInfo: [NSLocalizedDescriptionKey: "An unexpected error occured"]))
+                            return
+                        }
                     } else {
-                        completion?(questionsDict: nil, error: NSError(domain: "An unexpected error occured", code: 0, userInfo: nil))
-                        return
+                        if let dict = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as? [String: AnyObject] {
+                            completion?(questionsDict: nil, error: NSError(domain: "duo.main", code: response!.statusCode, userInfo: [NSLocalizedDescriptionKey: dict!["message"] as! String]))
+                            return
+                        } else {
+                            completion?(questionsDict: nil, error: NSError(domain: "duo.main", code: response!.statusCode, userInfo: [NSLocalizedDescriptionKey: "An unexpected error occured"]))
+                            return
+                        }
                     }
                 } else {
-                    if let dict = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as? [String: AnyObject] {
-                        completion?(questionsDict: nil, error: NSError(domain: dict!["message"] as! String, code: 0, userInfo: nil))
-                        return
-                    } else {
-                        completion?(questionsDict: nil, error: NSError(domain: "An unexpected error occured", code: 0, userInfo: nil))
-                        return
-                    }
+                    completion?(questionsDict: nil, error: NSError(domain: "duo.main", code: 0, userInfo: [NSLocalizedDescriptionKey: "An unexpected error occured"]))
+                    return
                 }
-            } else {
-                completion?(questionsDict: nil, error: NSError(domain: "An unexpected error occured", code: 0, userInfo: nil))
-                return
             }
         }
         task.resume()
