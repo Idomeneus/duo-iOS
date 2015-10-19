@@ -16,7 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        
+        let navController: UINavigationController = storyBoard.instantiateViewControllerWithIdentifier("navController") as! UINavigationController
+        
+        let rootVC: MainFeedTableViewController = navController.topViewController as! MainFeedTableViewController
+        
+        rootVC.managedObjectContext = self.managedObjectContext
+        
+        self.window?.rootViewController = navController
+        
         return true
     }
 
