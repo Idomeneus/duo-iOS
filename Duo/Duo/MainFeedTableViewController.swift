@@ -25,10 +25,11 @@ class MainFeedTableViewController: UITableViewController {
     
     private func refreshData() {
         QuestionsService.getQuestionsForCategory(Enums.questionsCategory.Hot, inManagedObjectContext: managedObjectContext!) { (questions, error) -> Void in
-            if (error == nil && questions != nil) {
+            if (error == nil) {
                 self.currentList = questions
                 self.tableView.reloadData()
             } else {
+                ErrorHandler.handleError(error!, forViewController: self)
             }
         }
     }
