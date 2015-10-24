@@ -82,6 +82,6 @@ class User: NSManagedObject {
             return
         }
         
-        userName = dict["userName"] as? String
+        name = dict["userName"] as? String
     }
 }

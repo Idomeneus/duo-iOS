@@ -15,21 +15,21 @@ class List: NSManagedObject {
         let entity = NSEntityDescription.entityForName("List", inManagedObjectContext: context)!
         self.init(entity: entity, insertIntoManagedObjectContext: context)
         
-        name = dict["name"] as? String
+        category = dict["category"] as? String
         
         updateWithDictionary(dict)
     }
     
     class func existingOrNewListWithDictionary(dict: Dictionary<String, AnyObject>, inManageObjectContext context:NSManagedObjectContext!) -> List {
         
-        let name: String? = dict["name"] as? String
+        let category: String? = dict["category"] as? String
         
         var list: List?
         
-        if (name == nil) {
+        if (category == nil) {
             list = List(dict: dict, insertIntoManagedObjectContext: context)
         } else {
-            list = existingOrNewListWithName(name!, inManageObjectContext: context)
+            list = existingOrNewListForCategory(category!, inManageObjectContext: context)
             
             list!.updateWithDictionary(dict)
         }
@@ -37,28 +37,28 @@ class List: NSManagedObject {
         return list!
     }
     
-    class func existingOrNewListWithName(listName: String, inManageObjectContext context:NSManagedObjectContext!) -> List {
+    class func existingOrNewListForCategory(listCategory: String, inManageObjectContext context:NSManagedObjectContext!) -> List {
         
-        var list: List? = getListWithName(listName, inManageObjectContext: context)
+        var list: List? = getListForCategory(listCategory, inManageObjectContext: context)
         
         if (list == nil) {
             let entity = NSEntityDescription.entityForName("List", inManagedObjectContext: context)!
             list = List(entity: entity, insertIntoManagedObjectContext: context)
-            list?.name = listName
+            list?.category = listCategory
         }
         
         return list!
     }
     
-    class func getListWithName(listName: String, inManageObjectContext context:NSManagedObjectContext!) -> List? {
+    class func getListForCategory(listCategory: String, inManageObjectContext context:NSManagedObjectContext!) -> List? {
         
-        if (listName.characters.count <= 0) {
+        if (listCategory.characters.count <= 0) {
             return nil
         }
         
         let request: NSFetchRequest = NSFetchRequest(entityName: "List")
         
-        let predicate: NSPredicate = NSPredicate(format: "name == %@", listName)
+        let predicate: NSPredicate = NSPredicate(format: "category == %@", listCategory)
         request.predicate = predicate
         
         do {
@@ -77,8 +77,8 @@ class List: NSManagedObject {
 
     func updateWithDictionary(dict: Dictionary<String, AnyObject>) {
         
-        if (name != dict["name"] as? String) {
-            print("List: updateWithDictionary() - Trying to update list with different name")
+        if (category != dict["category"] as? String) {
+            print("List: updateWithDictionary() - Trying to update list with different listCategory")
             return
         }
         

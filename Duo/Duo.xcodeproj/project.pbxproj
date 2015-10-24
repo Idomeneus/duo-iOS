@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C30E37F81BDB2F6200F724A4 /* Question+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E37F51BDB2F6200F724A4 /* Question+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		C30E37FA1BDB2F6200F724A4 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E37F71BDB2F6200F724A4 /* User+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		C36E56471BCF84BF00DF7990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56461BCF84BF00DF7990 /* AppDelegate.swift */; };
 		C36E564C1BCF84BF00DF7990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36E564A1BCF84BF00DF7990 /* Main.storyboard */; };
 		C36E564F1BCF84BF00DF7990 /* Duo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C36E564D1BCF84BF00DF7990 /* Duo.xcdatamodeld */; };
@@ -15,13 +17,11 @@
 		C36E566A1BCF84BF00DF7990 /* DuoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56691BCF84BF00DF7990 /* DuoUITests.swift */; };
 		C36E56781BD0048C00DF7990 /* MainFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56771BD0048C00DF7990 /* MainFeedTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C36E567B1BD00B5200DF7990 /* MockedQuestions.json in Resources */ = {isa = PBXBuildFile; fileRef = C36E567A1BD00B5200DF7990 /* MockedQuestions.json */; settings = {ASSET_TAGS = (); }; };
-		C36E56811BD0156500DF7990 /* Question+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E567D1BD0156500DF7990 /* Question+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		C36E56821BD0156500DF7990 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E567E1BD0156500DF7990 /* Question.swift */; settings = {ASSET_TAGS = (); }; };
-		C36E56831BD0156500DF7990 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E567F1BD0156500DF7990 /* User+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		C36E56841BD0156500DF7990 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56801BD0156500DF7990 /* User.swift */; settings = {ASSET_TAGS = (); }; };
 		C36E56861BD0681A00DF7990 /* QuestionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E56851BD0681A00DF7990 /* QuestionTests.swift */; settings = {ASSET_TAGS = (); }; };
 		C36E56901BD0C65500DF7990 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E568E1BD0C65500DF7990 /* List.swift */; settings = {ASSET_TAGS = (); }; };
-		C36E56911BD0C65500DF7990 /* List+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E568F1BD0C65500DF7990 /* List+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		C390406D1BDB30FF00FEDB9A /* List+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C390406C1BDB30FF00FEDB9A /* List+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		C3A983E01BD314D900717DED /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3A983DF1BD314D900717DED /* Keys.plist */; settings = {ASSET_TAGS = (); }; };
 		C3A983E31BD31EBC00717DED /* QuestionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A983E21BD31EBC00717DED /* QuestionsService.swift */; settings = {ASSET_TAGS = (); }; };
 		C3A983E61BD320EB00717DED /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A983E51BD320EB00717DED /* Enums.swift */; settings = {ASSET_TAGS = (); }; };
@@ -47,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C30E37F51BDB2F6200F724A4 /* Question+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Question+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C30E37F71BDB2F6200F724A4 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C36E56431BCF84BF00DF7990 /* Duo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36E56461BCF84BF00DF7990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C36E564B1BCF84BF00DF7990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,13 +63,11 @@
 		C36E566B1BCF84BF00DF7990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C36E56771BD0048C00DF7990 /* MainFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeedTableViewController.swift; sourceTree = "<group>"; };
 		C36E567A1BD00B5200DF7990 /* MockedQuestions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockedQuestions.json; sourceTree = "<group>"; };
-		C36E567D1BD0156500DF7990 /* Question+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Question+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C36E567E1BD0156500DF7990 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		C36E567F1BD0156500DF7990 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C36E56801BD0156500DF7990 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C36E56851BD0681A00DF7990 /* QuestionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTests.swift; sourceTree = "<group>"; };
 		C36E568E1BD0C65500DF7990 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
-		C36E568F1BD0C65500DF7990 /* List+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "List+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C390406C1BDB30FF00FEDB9A /* List+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "List+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C3A983DF1BD314D900717DED /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		C3A983E21BD31EBC00717DED /* QuestionsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsService.swift; sourceTree = "<group>"; };
 		C3A983E51BD320EB00717DED /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
@@ -168,11 +168,11 @@
 		C36E567C1BD014D400DF7990 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C390406C1BDB30FF00FEDB9A /* List+CoreDataProperties.swift */,
 				C36E568E1BD0C65500DF7990 /* List.swift */,
-				C36E568F1BD0C65500DF7990 /* List+CoreDataProperties.swift */,
-				C36E567D1BD0156500DF7990 /* Question+CoreDataProperties.swift */,
+				C30E37F51BDB2F6200F724A4 /* Question+CoreDataProperties.swift */,
 				C36E567E1BD0156500DF7990 /* Question.swift */,
-				C36E567F1BD0156500DF7990 /* User+CoreDataProperties.swift */,
+				C30E37F71BDB2F6200F724A4 /* User+CoreDataProperties.swift */,
 				C36E56801BD0156500DF7990 /* User.swift */,
 			);
 			name = Models;
@@ -341,13 +341,13 @@
 				C3A983E31BD31EBC00717DED /* QuestionsService.swift in Sources */,
 				C36E56901BD0C65500DF7990 /* List.swift in Sources */,
 				C36E564F1BCF84BF00DF7990 /* Duo.xcdatamodeld in Sources */,
-				C36E56831BD0156500DF7990 /* User+CoreDataProperties.swift in Sources */,
-				C36E56911BD0C65500DF7990 /* List+CoreDataProperties.swift in Sources */,
-				C36E56811BD0156500DF7990 /* Question+CoreDataProperties.swift in Sources */,
 				C36E56781BD0048C00DF7990 /* MainFeedTableViewController.swift in Sources */,
+				C390406D1BDB30FF00FEDB9A /* List+CoreDataProperties.swift in Sources */,
+				C30E37F81BDB2F6200F724A4 /* Question+CoreDataProperties.swift in Sources */,
 				C3A983EC1BD4923400717DED /* ErrorHandler.swift in Sources */,
 				C36E56471BCF84BF00DF7990 /* AppDelegate.swift in Sources */,
 				C36E56841BD0156500DF7990 /* User.swift in Sources */,
+				C30E37FA1BDB2F6200F724A4 /* User+CoreDataProperties.swift in Sources */,
 				C3A983E61BD320EB00717DED /* Enums.swift in Sources */,
 				C3A983E81BD3285000717DED /* Router.swift in Sources */,
 			);

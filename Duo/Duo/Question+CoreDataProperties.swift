@@ -2,7 +2,7 @@
 //  Question+CoreDataProperties.swift
 //  Duo
 //
-//  Created by Bobo on 10/15/15.
+//  Created by Bobo on 10/23/15.
 //  Copyright © 2015 Boris Emorine. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -20,6 +20,7 @@ extension Question {
     @NSManaged var questionId: String?
     @NSManaged var textBody: String?
     @NSManaged var votes: NSObject?
-    @NSManaged var createdBy: NSManagedObject?
+    @NSManaged var createdBy: User?
+    @NSManaged var lists: NSSet?
 
 }
