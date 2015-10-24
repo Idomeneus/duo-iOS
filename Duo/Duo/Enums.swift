@@ -13,4 +13,20 @@ struct Enums {
         case New
         case Main
     }
+    
+    static func questionsCateroryToString(category: Enums.questionsCategory) -> String {
+        switch category {
+        case Enums.questionsCategory.Top:
+            return "Top"
+        
+        case Enums.questionsCategory.Hot:
+            return "Hot"
+            
+        case Enums.questionsCategory.New:
+            return "New"
+            
+        case Enums.questionsCategory.Main:
+            return "Main"
+        }
+    }
 }
