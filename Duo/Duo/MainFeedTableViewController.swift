@@ -18,7 +18,7 @@ class MainFeedTableViewController: UITableViewController {
     // MARK: Life cycle
     override func viewDidLoad() {
         
-        currentList = List.existingOrNewListWithName("Hot", inManageObjectContext: managedObjectContext)
+        currentList = List.existingOrNewListForCategory(Enums.questionsCateroryToString(Enums.questionsCategory.Hot), inManageObjectContext: managedObjectContext)
         
         refreshData()
     }
