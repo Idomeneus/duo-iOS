@@ -56,9 +56,9 @@ class QuestionTests: XCTestCase {
             XCTAssert(imageURLs[0] == "https://upload.wikimedia.org/wikipedia/en/0/0a/Justin_brandon_guitar.jpg")
             XCTAssert(imageURLs[1] == "https://upload.wikimedia.org/wikipedia/en/d/d2/Justindcooper.jpg")
             
-            var user: User = question.createdBy as! User
+            var user: User = question.createdBy as User!
             XCTAssert(user.userId == "usr:2418905")
-            XCTAssert(user.userName == "user1")
+            XCTAssert(user.name == "user1")
             
             
             // Test Second Valid Dictionary
@@ -78,9 +78,9 @@ class QuestionTests: XCTestCase {
             XCTAssert(imageURLs[0] == "http://t0.gstatic.com/images?q=tbn:ANd9GcQxLbgQI_moIEqTPMvD1J4QdeM0J73ILywafF8DnMvQK9V05opN")
             XCTAssert(imageURLs[1] == "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7DS6MWsARaso9bYemSASGt3mMbnUldIWK6N8Xao3xJ97oVjZM")
             
-            user = question.createdBy as! User
+            user = question.createdBy as User!
             XCTAssert(user.userId == "usr:2418205")
-            XCTAssert(user.userName == "user2")
+            XCTAssert(user.name == "user2")
             
             
             // Test Third Valid Dictionary
@@ -100,9 +100,9 @@ class QuestionTests: XCTestCase {
             XCTAssert(imageURLs[0] == "https://usatftw.files.wordpress.com/2015/01/ap_super_bowl_football_70246842.jpg?w=1000&h=730")
             XCTAssert(imageURLs[1] == "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAS-AAAAJDM5MDg4NGNmLTFkYmQtNDI3ZC1hMzNlLWIzMDIwODdhMmJhNg.jpg")
             
-            user = question.createdBy as! User
+            user = question.createdBy as User!
             XCTAssert(user.userId == "usr:2418205")
-            XCTAssert(user.userName == "user2")
+            XCTAssert(user.name == "user2")
             
             
             // Test Empty Dictionary
@@ -162,9 +162,9 @@ class QuestionTests: XCTestCase {
             XCTAssert(imageURLs[0] == "https://upload.wikimedia.org/wikipedia/en/0/0a/Justin_brandon_guitar.jpg")
             XCTAssert(imageURLs[1] == "https://upload.wikimedia.org/wikipedia/en/d/d2/Justindcooper.jpg")
             
-            let user: User = question!.createdBy as! User
+            let user: User = question!.createdBy as User!
             XCTAssert(user.userId == "usr:2418905")
-            XCTAssert(user.userName == "user1")
+            XCTAssert(user.name == "user1")
         } catch {
             XCTFail()
             print("Error getting dictionary")
@@ -203,9 +203,9 @@ class QuestionTests: XCTestCase {
             XCTAssert(imageURLs[0] == "https://upload.wikimedia.org/wikipedia/en/0/0a/Justin_brandon_guitar.jpg")
             XCTAssert(imageURLs[1] == "https://upload.wikimedia.org/wikipedia/en/d/d2/Justindcooper.jpg")
             
-            var user: User = question!.createdBy as! User
+            var user: User = question!.createdBy as User!
             XCTAssert(user.userId == "usr:2418905")
-            XCTAssert(user.userName == "user1")
+            XCTAssert(user.name == "user1")
             
             
             // Sets the question to nil
@@ -229,9 +229,9 @@ class QuestionTests: XCTestCase {
             XCTAssert(imageURLs[0] == "https://upload.wikimedia.org/wikipedia/en/0/0a/Justin_brandon_guitar.jpg")
             XCTAssert(imageURLs[1] == "https://upload.wikimedia.org/wikipedia/en/d/d2/Justindcooper.jpg")
             
-            user = question!.createdBy as! User
+            user = question!.createdBy as User!
             XCTAssert(user.userId == "usr:2418905")
-            XCTAssert(user.userName == "user1")
+            XCTAssert(user.name == "user1")
         } catch {
             XCTFail()
             print("Error getting dictionary")
