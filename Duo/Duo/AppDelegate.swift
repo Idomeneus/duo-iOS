@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let navController: UINavigationController = storyBoard.instantiateViewControllerWithIdentifier("navController") as! UINavigationController
         
-        let rootVC: MainFeedTableViewController = navController.topViewController as! MainFeedTableViewController
+        let rootVC: MainFeedViewController = navController.topViewController as! MainFeedViewController
         
         rootVC.managedObjectContext = self.managedObjectContext
         
