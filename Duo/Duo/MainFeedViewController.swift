@@ -20,19 +20,12 @@ class MainFeedViewController: UIViewController, UITableViewDataSource, UITableVi
     // MARK: Life cycle
     override func viewDidLoad() {
         
-//        currentList = List.existingOrNewListForCategory(Enums.questionsCateroryToString(Enums.questionsCategory.Hot), inManageObjectContext: managedObjectContext)
+        currentList = List.existingOrNewListForCategory(Enums.questionsCateroryToString(Enums.questionsCategory.Hot), inManageObjectContext: managedObjectContext)
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-        let path: String? = NSBundle(forClass: self.classForCoder).pathForResource("MockedQuestions", ofType: "json")
-        let jsonData = NSData(contentsOfFile: path!)
-        let dict: Dictionary<String, AnyObject>?
-        dict = try! NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions.MutableContainers) as? Dictionary<String, AnyObject>
-
-        currentList = List.existingOrNewListWithDictionary(dict!, inManageObjectContext: managedObjectContext)
-        
-//        refreshData()
+                
+        refreshData()
     }
     
     private func refreshData() {
